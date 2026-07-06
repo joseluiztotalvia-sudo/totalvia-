@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Executivo - Reincidências Técnicas</title>
+<style>
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:#eef2f7;
+    margin:0;
+    color:#1f2937;
+}
+.header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+.header h1{margin:0;font-size:34px;}
+.header p{margin-top:10px;opacity:.9;}
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+.card{
+    flex:1;
+    min-width:220px;
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+.card h3{
+    margin:0;
+    color:#64748b;
+    font-size:14px;
+    text-transform:uppercase;
+}
+.card .value{
+    font-size:36px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.podium{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    margin-bottom:30px;
+    margin-top:20px;
+}
+.place{
+    background:white;
+    border-radius:12px;
+    padding:30px 25px 25px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+.place h2{
+    margin:0 0 12px 0;
+    font-size:42px;
+    line-height:1.2;
+    display:block;
+}
+.gold{border-top:8px solid #d4af37;}
+.silver{border-top:8px solid #c0c0c0;}
+.bronze{border-top:8px solid #cd7f32;}
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+th{
+    background:#1e3a8a;
+    color:white;
+    padding:14px;
+}
+td{
+    padding:12px;
+    border-bottom:1px solid #e5e7eb;
+}
+tr:hover{
+    background:#f8fafc;
+}
+.good{color:#16a34a;font-weight:bold;}
+.alert{color:#dc2626;font-weight:bold;}
+.footer{
+    margin-top:20px;
+    color:#64748b;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Dashboard Executivo de Reincidências</h1>
+    <p>Ranking dos Técnicos com Menor Índice de Reincidências</p>
+</div>
+
+<div class="container">
+
+<div class="cards">
+    <div class="card">
+        <h3>Total de Técnicos Avaliados</h3>
+        <div class="value">9</div>
+    </div>
+    <div class="card">
+        <h3>Menor Reincidência</h3>
+        <div class="value">35</div>
+    </div>
+    <div class="card">
+        <h3>Maior Reincidência</h3>
+        <div class="value">72</div>
+    </div>
+    <div class="card">
+        <h3>Amplitude</h3>
+        <div class="value">37</div>
+    </div>
+</div>
+
+<h2 style="margin-top:40px; margin-bottom:50px;">Top 3 Técnicos</h2>
+
+<div class="podium">
+    <div class="place silver">
+        <h2>🥈</h2>
+        <h3>Wesley Carlos dos Santos Jesus</h3>
+        <p><strong>37</strong> reincidências</p>
+    </div>
+    <div class="place gold">
+        <h2>🥇</h2>
+        <h3>Valdeir Costa Pereira</h3>
+        <p><strong>35</strong> reincidências</p>
+    </div>
+    <div class="place bronze">
+        <h2>🥉</h2>
+        <h3>Tadeu Borges dos Santos</h3>
+        <p><strong>54</strong> reincidências</p>
+    </div>
+</div>
+
+<h2>Ranking Completo</h2>
+
+<table>
+<thead>
+<tr>
+<th>Posição</th>
+<th>Técnico</th>
+<th>Reincidências</th>
+<th>Média (Dias)</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Valdeir Costa Pereira</td><td>35</td><td>1,9</td><td class="good">Destaque</td></tr>
+<tr><td>2</td><td>Wesley Carlos dos Santos Jesus</td><td>37</td><td>2,3</td><td class="good">Destaque</td></tr>
+<tr><td>3</td><td>Tadeu Borges dos Santos</td><td>54</td><td>2,5</td><td>Dentro da Média</td></tr>
+<tr><td>4</td><td><span style="filter:blur(4px);user-select:none;">Antonio Aparecido Efigenio dos Santos</span></td><td>56</td><td>1,8</td><td>Dentro da Média</td></tr>
+<tr><td>5</td><td><span style="filter:blur(4px);user-select:none;">Murilo Dias Barbosa</span></td><td>57</td><td>2,3</td><td>Dentro da Média</td></tr>
+<tr><td>6</td><td><span style="filter:blur(4px);user-select:none;">Pedro Thiago Moreira Rosa</span></td><td>63</td><td>1,8</td><td>Atenção</td></tr>
+<tr><td>7</td><td><span style="filter:blur(4px);user-select:none;">Luiz Henrique Alves Santana Dantas</span></td><td>63</td><td>2,2</td><td>Atenção</td></tr>
+<tr><td>8</td><td><span style="filter:blur(4px);user-select:none;">Julio Fernando da Silva</span></td><td>68</td><td>1,6</td><td class="alert">Crítico</td></tr>
+<tr><td>9</td><td><span style="filter:blur(4px);user-select:none;">Gilmar Batista dos Santos</span></td><td>72</td><td>1,8</td><td class="alert">Crítico</td></tr>
+</tbody>
+</table>
+
+<div class="footer">
+    <strong>Observação:</strong> Ranking elaborado considerando o volume absoluto de reincidências. Para análise de desempenho definitiva recomenda-se avaliar também a taxa de reincidência em relação ao número total de atendimentos executados por cada técnico.
+</div>
+
+</div>
+</body>
+</html>
